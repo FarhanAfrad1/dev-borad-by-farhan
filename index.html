@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-poppins: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="pt-10 bg-[#f5f8ff]">
+    <header class="max-w-6xl mx-auto">
+      <nav>
+        <div class="flex items-center p-6 bg-base-100 shadow-sm rounded-2xl">
+          <div class="flex-1">
+            <div class="flex items-center gap-2">
+              <img src="assets/logo.png" alt="logo of the site" />
+              <p class="text-4xl text-[#00303C] font-light">
+                Dev<span class="font-bold">Board</span>
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-9">
+            <div
+              class="flex items-center gap-2 py-3 px-6 bg-[#f4f7ff] rounded-[36px]"
+            >
+              <img src="assets/checkbox.png" alt="checkbox" />
+
+              <!-- this text will be updated -->
+              <span class="font-bold text-3xl text-[#1E1E1E]">23</span>
+            </div>
+
+            <!-- background color generator  -->
+            <div
+              class="p-3 bg-[#f4f7ff] rounded-full cursor-pointer active:scale-95 transform duration-200"
+            >
+              <img src="assets/theme-btn.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="max-w-6xl mx-auto mt-5 flex justify-between">
+      <section class="w-[74%] rounded-2xl bg-white">
+        <!-- top section -->
+        <section class="p-6">
+          <div class="grid grid-cols-7 gap-3">
+            <!-- task asigned -->
+            <div
+              class="col-span-2 flex items-center bg-[#F4F7FF] py-8 px-4 rounded-xl gap-5"
+            >
+              <div class="p-[18px] bg-white rounded-full">
+                <img src="assets/checkbox.png" alt="" />
+              </div>
+              <div class="flex flex-col text-[#00303C]">
+                <span class="font-medium">Task Assigned</span>
+                <!-- taks remaining -->
+                <span class="font-bold text-3xl">06</span>
+              </div>
+            </div>
+            <!-- it will take you blog.html page -->
+            <div
+              class="col-span-3 flex items-center bg-gradient-to-br from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] py-8 px-4 rounded-xl gap-4 cursor-pointer active:scale-95 duration-200 transition-all"
+            >
+              <div class=""><img src="assets/board.png" alt="" /></div>
+              <div class="text-white text-2xl font-medium">
+                Discover Something New Today!
+              </div>
+            </div>
+            <div
+              class="col-span-2 flex items-center bg-[#F4F7FF] py-8 px-4 rounded-xl gap-5"
+            >
+              <div class="p-[18px] bg-white rounded-full">
+                <img src="assets/calender.png" alt="" />
+              </div>
+              <div class="flex flex-col text-[#00303C]">
+                <span class="font-medium">Wed,</span>
+                <!-- date, it will be dynamic -->
+                <span class="font-bold text-lg">Jul 28 2025 </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="border-dashed border-[#3752FD33] border-1" />
+        <!-- main section -->
+        <section class="mt-8 grid grid-cols-3 p-6 gap-4">
+          <!-- card -->
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
+            <p class="py-1 px-4 bg-white w-fit rounded-lg text-sm">ShopEase</p>
+            <h2 class="text-xl font-semibold my-4">Fix Mobile Button Issue</h2>
+            <div class="py-4 px-4 bg-white rounded-lg text-sm">Debug using Chrome DevTools ,check for overlapping</div>
+            <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <span class="text-sm">Deadline</span>
+                <span class="font-medium">21 March 2025</span>
+              </div>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <aside class="w-[25%] rounded-2xl bg-white">
+        <div class="flex justify-center items-center mt-6 flex-col gap-4">
+            <div class="flex items-center gap-3">
+                <img src="assets/activity.png" alt="activity icon">
+                <span class="text-[#00303C] text-xl font-medium">Activity Log</span>
+            </div>
+            <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium w-fit">Clear History</button>
+        </div>
+        <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
+
+        <!-- history will go here -->
+        <div class="p-4">
+            <p class="bg-[#F4F7FF] p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app/main.js"></script>
+  </body>
+</html>
