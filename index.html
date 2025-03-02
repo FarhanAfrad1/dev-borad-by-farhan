@@ -40,11 +40,11 @@
               <img src="assets/checkbox.png" alt="checkbox" />
 
               <!-- this text will be updated -->
-              <span class="font-bold text-3xl text-[#1E1E1E]">23</span>
+              <span id="total-task" class="font-bold text-3xl text-[#1E1E1E]">23</span>
             </div>
 
             <!-- background color generator  -->
-            <div
+            <div id="theme-btn"
               class="p-3 bg-[#f4f7ff] rounded-full cursor-pointer active:scale-95 transform duration-200"
             >
               <img src="assets/theme-btn.png" alt="" />
@@ -68,11 +68,11 @@
               <div class="flex flex-col text-[#00303C]">
                 <span class="font-medium">Task Assigned</span>
                 <!-- taks remaining -->
-                <span class="font-bold text-3xl">06</span>
+                <span class="font-bold text-3xl">0<span id="assigned-task">6</span></span>
               </div>
             </div>
             <!-- it will take you blog.html page -->
-            <div
+            <div onclick="window.location.href = './blog.html'"
               class="col-span-3 flex items-center bg-gradient-to-br from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] py-8 px-4 rounded-xl gap-4 cursor-pointer active:scale-95 duration-200 transition-all"
             >
               <div class=""><img src="assets/board.png" alt="" /></div>
@@ -108,7 +108,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 task-button">Completed</button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
@@ -121,7 +121,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 task-button">Completed</button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
@@ -134,7 +134,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 task-button">Completed</button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
@@ -147,7 +147,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 rounded-lg font-medium task-button">Completed</button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
@@ -160,7 +160,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 text-white bg-blue-700 rounded-lg font-medium task-button">Completed</button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-2xl text-[#00303C]">
@@ -173,7 +173,7 @@
                 <span class="text-sm">Deadline</span>
                 <span class="font-medium">21 March 2025</span>
               </div>
-              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium">Completed</button>
+              <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100 px-3 text-white bg-blue-700 rounded-lg font-medium task-button">Completed</button>
             </div>
           </div>
         </section>
@@ -184,17 +184,24 @@
                 <img src="assets/activity.png" alt="activity icon">
                 <span class="text-[#00303C] text-xl font-medium">Activity Log</span>
             </div>
-            <button class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium w-fit">Clear History</button>
+            <button id="clear-history" class="py-2 cursor-pointer active:scale-95 duration-200 transition-all px-3 text-white bg-blue-700 rounded-lg font-medium w-fit">Clear History</button>
         </div>
         <hr class="border-dashed border-[#3752FD33] border-[0.8px] my-3"/>
 
         <!-- history will go here -->
-        <div class="p-4">
-            <p class="bg-[#F4F7FF] p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        <div class="p-4" id="history">
+            
         </div>
       </aside>
     </main>
+    
 
+
+
+
+    <!-- all script file will go here -->
+    <script src="app/utility.js"></script>
+    <script src="app/theme.js"></script>
     <script src="app/main.js"></script>
   </body>
 </html>
