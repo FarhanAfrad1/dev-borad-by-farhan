@@ -18,6 +18,12 @@ for(let btn of taskButtons){
         remainingAssignedTask -= 1
         updateInnerText('assigned-task',remainingAssignedTask)
 
+        // alert
+        alert('Board updated Successfully');
+        if(remainingAssignedTask === 0){
+            alert("congrates!!! You have completed all the current task")
+        }
+
         // history is update
         const p = document.createElement('p');
         p.innerText = `You have completed the task ${titleOfTask} at ${timeOnClikedButton}`;
