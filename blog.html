@@ -46,27 +46,63 @@
             <article class="bg-white mb-5">
                 <h2 class="p-4 font-semibold text-lg">Question-1: What are the different ways to select an element in the DOM?</h2>
                 <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
-                <p class="p-4"></p>
+                <div class="p-4">
+                  Multiple ways to to select an element in the DOM.But there are 5 common ways to select an element,
+                  <ol class="list-decimal ml-4">
+                    <li class="">document.getElementsByTagName()</li>
+                    <p>In this way you have to pass the tag name in the parenthesis an htmlcollection will return with the matched tag name.</p>
+                    <li>document.getElementById()</li>
+                    <p>Here you have to give a specific id to the element, then pass the id to the parenthesis and it will select that specefic element</p>
+                    <li>document.getElementsByClassName()</li>
+                    <p>Same way like getElementById(), here you have to give className to the element then pass the className to the parenthesis and it will return an htmlcollection of matched element</p>
+                    <li>document.querySelector()</li>
+                    <p>Here little bit different, you can select an element the way you select the element in the css. querySelector() will give you the first matched element</p>
+                    <li>document.querySelectorAll()</li>
+                    <p>same as querySelector(), but it wll give you all the matched element as nodelist.</p>
+                  </ol>
+
+                </div>
             </article>
             <article class="bg-white mb-5">
                 <h2 class="p-4 font-semibold text-lg">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
                 <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
-                <p class="p-4"></p>
+                <p class="p-4">
+                  -innerHTML is the actual HTML and deal with as actual html file works. <br>
+                  -innerText is the only human readable text inside of an element. <br>
+                  -textContent ignores html tags and treat them plain text but comment and other hidden text and comments.
+                </p>
             </article>
             <article class="bg-white mb-5">
                 <h2 class="p-4 font-semibold text-lg">Question-3: What is event delegation in the DOM?</h2>
                 <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
-                <p class="p-4"></p>
+                <p class="p-4">Event delegation is very simple concept. When an event happened on an element same event is found to its parent and ancestor. So instead of using event listener on the childs it is used on the parent elemens. Basically event delegation is the idea where we delegate the handling of an event to a different element instead of the actual element that recieved that event.</p>
             </article>
             <article class="bg-white mb-5">
                 <h2 class="p-4 font-semibold text-lg">Question-4: What is event bubbling in the DOM?</h2>
                 <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
-                <p class="p-4"></p>
+                <p class="p-4">
+                  Event bubbling in the DOM is when an event happened on an element first runs the handles on it then handler runs on its parent this process is go on until the last ancestor is found.It's like if there is a button inside a div which is inside a section and button is clicked but there is no handler in the button, click event will search if there is any handler on the div but there is no handler in div also then it will search there is a handler in the section and handler is asked to do a alert in the windows. it will do that. see there is not handler on the button but there is a handler on the parent of button and we didn't clicked the parent, we just clicked the button then event bubble up to its ancestor and ran the handler.This is event bubbling. If there is handler on every element then every handler would ran if we just clicked the button.
+                </p>
             </article>
             <article class="bg-white mb-5">
                 <h2 class="p-4 font-semibold text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
                 <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
-                <p class="p-4"></p>
+                <div class="p-4">
+                  <p>-To create an element- I have to use document.createElement().For example I want to create a "p" element then i have to do it this way document.createElement("p"). after creating it i can store the element into a variable like this, <br>
+                  <code> p = document.createElement('p')</code>
+                  </p>
+                  <p>-To add that element just i created 1st of all i have to decide or select where i want to add that element. suppose i want to add that element in the body of html then i can do like this, <br>
+                  <code>document.body.appendChild(p)</code><br>
+                  this will add the element into the body of the html.
+                  </p>
+                  <p>-Now to remove an element I have to select the parent of that element then i can use "removeChild()" method. suppose i want to remove that p element just i added into the body now i will do like this, <br>
+                    <code>
+                    let p = document.getElementById('just-created') <br>
+                    document.body.removeChild('p') <br>
+                    </code>
+                    here i added an id to the p element and named it 'just-created' to select that p element.
+                  </p>                  
+                </div>
             </article>
         </div>
     </main>
