@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-poppins: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#f5f8ff] pb-5 font-poppins">
+    <header class="max-w-7xl mx-auto pt-5">
+        <nav>
+          <div class="flex items-center p-4 bg-base-100 shadow-sm rounded-2xl">
+            <div class="flex-1">
+              <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="logo of the site" />
+                <p class="text-4xl text-[#00303C] font-light">
+                  Dev<span class="font-bold">Board</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-9">
+                <button class="py-2 px-3 cursor-pointer active:scale-95 duration-200 transition-all text-white bg-blue-700 rounded-lg font-medium">Back to Desk</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main class="max-w-7xl mx-auto pt-5">
+        <h1 class="text-center font-bold text-xl mb-5">Blogs</h1>
+        <div>
+            <article class="bg-white mb-5">
+                <h2 class="p-4 font-semibold text-lg">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
+                <p class="p-4"></p>
+            </article>
+            <article class="bg-white mb-5">
+                <h2 class="p-4 font-semibold text-lg">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
+                <p class="p-4"></p>
+            </article>
+            <article class="bg-white mb-5">
+                <h2 class="p-4 font-semibold text-lg">Question-3: What is event delegation in the DOM?</h2>
+                <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
+                <p class="p-4"></p>
+            </article>
+            <article class="bg-white mb-5">
+                <h2 class="p-4 font-semibold text-lg">Question-4: What is event bubbling in the DOM?</h2>
+                <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
+                <p class="p-4"></p>
+            </article>
+            <article class="bg-white mb-5">
+                <h2 class="p-4 font-semibold text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <hr class="border-dashed border-[#3752FD33] border-[0.8px]"/>
+                <p class="p-4"></p>
+            </article>
+        </div>
+    </main>
+    
+</body>
+</html>
